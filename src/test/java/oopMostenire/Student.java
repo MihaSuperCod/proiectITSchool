@@ -20,4 +20,19 @@ public class Student extends Persoana {
         System.out.println("In ce an este studentul? " + anul);
         System.out.println("Are restante studentul? " + restante);
     }
+    public void mananca(){
+        super.mananca();
+        System.out.println("Studentul mananca intre cursuri");
+    }
+
+    public void cautaStudent(){
+        System.out.println("Afisez toti studentii");
+    }
+
+    public void cautaStudent(String facultate, int anul){
+        System.out.println("Afisez studentii de la facultate: " + facultate + anul);
+    }
+    public void cautaStudent(boolean restante){
+        System.out.println("Afisez studentii cu restante " + restante);
+    }
 }
