@@ -59,4 +59,19 @@ public class Sportiv extends Persoana {
     public void setExperienta(int experienta) {
         this.experienta = experienta;
     }
+
+    @Override
+    public void mergeLaAntrenamente(){
+        System.out.println("Sportivul trebuie sa mearga la antrenamente");
+    }
+
+    @Override
+    public void participaLaCompetitii(){
+        System.out.println("Sportivul participa la competitii");
+    }
+
+    @Override
+    public void respectaRegim(){
+        System.out.println("Sportivul trebuie sa respecte regimul");
+    }
 }

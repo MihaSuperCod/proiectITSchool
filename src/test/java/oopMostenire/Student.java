@@ -1,11 +1,13 @@
 package oopMostenire;
 
-public class Student extends Persoana {
+import org.openqa.selenium.json.JsonOutput;
 
-    public String facultate;
-    public String domeniu;
-    public int anul;
-    public boolean restante;
+public class Student extends Persoana implements StudentInterface {
+
+    private String facultate;
+    private String domeniu;
+    private int anul;
+    private boolean restante;
 
     public Student(String nume, String prenume, int varsta, String adresa, String facultate, String domeniu, int anul, boolean restante) {
         super(nume, prenume, varsta, adresa);
@@ -35,4 +37,20 @@ public class Student extends Persoana {
     public void cautaStudent(boolean restante){
         System.out.println("Afisez studentii cu restante " + restante);
     }
+
+    @Override
+    public void mergeLaCursuri(){
+        System.out.println("Studentul trebuie sa mearga la cursuri");
+    }
+
+    @Override
+    public void trebuieSaStudieze(){
+        System.out.println("Studentul trebuie sa studieze");
+    }
+
+    @Override
+    public void saNUAibaRestante(){
+        System.out.println("Studentul trebuie sa nu aiba restante");
+    }
 }
+

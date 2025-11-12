@@ -18,6 +18,10 @@ public class MostenireTest {
         angajat.afiseazaDetalii("Altex");
         angajat.afiseazaDetalii("Altex", true);
 
+        angajat.ajungeLaTimpLaBirou();
+        angajat.respectaRegulamentulIntern();
+        angajat.munceste();
+
         Sportiv sportiv = new Sportiv("Dumitru", "Sebastian" ,34,"Viitorului 10", "Fotbal",true, 6);
         sportiv.infoSportiv();
         sportiv.mananca();
@@ -26,6 +30,14 @@ public class MostenireTest {
         Student student = new Student("Robert", "Petrovici",35,"Electronicii 2","Ion Mincu Timisoara","IT",2025,false);
         student.infoStudent();
         student.mananca();
+
+        sportiv.mergeLaAntrenamente();
+        sportiv.respectaRegim();
+        sportiv.participaLaCompetitii();
+
+        student.mergeLaCursuri();
+        student.trebuieSaStudieze();
+        student.saNuAibaRestante();
 
     }
 }
