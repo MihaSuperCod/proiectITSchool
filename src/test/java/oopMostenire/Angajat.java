@@ -15,76 +15,76 @@ public class Angajat extends Persoana implements AngajatInterface {
         this.zileLibere = zileLibere;
     }
 
-    public void infoAngajat() {
+    public void infoAngajat(){
         infoPersoana();
         System.out.println("Firma la care lucreaza angajatul este " + firma);
-        System.out.println("Salariul angajatului este " + salariu);
+        System.out.println("Salariul pe care angajatul il are este de " + salariu);
         System.out.println("Perioada contractului este " + contract);
         System.out.println("Cate zile libere are angajatul? " + zileLibere);
     }
 
-    public void mananca() {
+    public void mananca(){
         System.out.println("Angajatul mananca atunci cand are pauza");
     }
 
-    //Polimorfism Static
+//    Polimorfism Static
 
-    //Metoda fara parametri
+//    Metoda fara parametrii
 
-    public void afiseazaDetalii() {
-        System.out.println("Afisez toti angajatii din companie");
+    public void afiseazaDetalii(){
+        System.out.println("Afisez toti angajatii din firma");
     }
 
-    //Afisam detalii dupa departament
+//    Afisam detalii dupa departament
 
-    public void afiseazaDetalii(String firma) {
-        System.out.println("Afisez angajatii din firma: " + firma);
+    public void afiseazaDetalii(String firma){
+        System.out.println("Afisez agajatii din departamentul: " + firma);
     }
 
-    public void afiseazaDetalii(String firma, boolean contract) {
-        System.out.println("Afisez angajatii din: " + firma + " cu contract pe perioada determinata");
+    public void afiseazaDetalii(String firma, boolean contract){
+        System.out.println("Afisez anajatii din: " + firma + "Cu contract pe perioada determinata " + contract);
     }
 
     public String getFirma() {
         return firma;
     }
 
-    public double getSalariu() {
-        return salariu;
+    public void setFirma(String firma) {
+        this.firma = firma;
     }
 
     public String getContract() {
         return contract;
     }
 
-    public int getZileLibere() {
-        return zileLibere;
-    }
-
-    public void setFirma(String firma) {
-        this.firma = firma;
-    }
-
     public void setContract(String contract) {
         this.contract = contract;
+    }
+
+    public int getZileLibere() {
+        return zileLibere;
     }
 
     public void setZileLibere(int zileLibere) {
         this.zileLibere = zileLibere;
     }
 
-    @Override
-    public void ajungeLaTimpLaBirou(){
-        System.out.println("Angajatul trebuie sa ajunga la birou la 8");
+    public double getSalariu() {
+        return salariu;
     }
 
     @Override
-    public void munceste(){
+    public void ajungeLaTimpLaBirou() {
+        System.out.println("Angajatul trebuie sa fie la birou intre 8-9 ");
+    }
+
+    @Override
+    public void munceste() {
         System.out.println("Angajatul trebuie sa munceasca in intervalul 8-17");
     }
 
     @Override
-    public void respectaRegulamentulIntern(){
-        System.out.println("Angajatul trebuie sa respecte regulamentul intern");
+    public void respectaRegulamentulIntern() {
+        System.out.println("Angajatul respecta regulamentul intern");
     }
 }

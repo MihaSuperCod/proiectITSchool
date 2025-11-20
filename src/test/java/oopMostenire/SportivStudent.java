@@ -5,7 +5,6 @@ public class SportivStudent extends Persoana implements SportivInterface, Studen
     private String sport;
     private boolean sportEchipa;
     private int experienta;
-
     private String facultate;
     private String domeniu;
     private int anul;
@@ -23,7 +22,22 @@ public class SportivStudent extends Persoana implements SportivInterface, Studen
     }
 
     @Override
-    public void mergeLaCursuri() {
+    public void mergeLaAntrenamente() {
+
+    }
+
+    @Override
+    public void mergeLaCompetitii() {
+
+    }
+
+    @Override
+    public void respectaRegim() {
+
+    }
+
+    @Override
+    public void mergiLaCursuri() {
 
     }
 

@@ -6,11 +6,9 @@ public class AngajatSportivStudent extends Persoana implements AngajatInterface,
     private double salariu;
     private String contract;
     private int zileLibere;
-
     private String sport;
     private boolean sportEchipa;
     private int experienta;
-
     private String facultate;
     private String domeniu;
     private int anul;
@@ -47,22 +45,22 @@ public class AngajatSportivStudent extends Persoana implements AngajatInterface,
     }
 
     @Override
-    public void mergeLaAntrenament() {
+    public void mergeLaAntrenamente() {
 
     }
 
     @Override
-    public void participaLaCompetitii() {
+    public void mergeLaCompetitii() {
 
     }
 
     @Override
-    public void respcetaRegim() {
+    public void respectaRegim() {
 
     }
 
     @Override
-    public void mergeLaCursuri() {
+    public void mergiLaCursuri() {
 
     }
 
@@ -75,4 +73,11 @@ public class AngajatSportivStudent extends Persoana implements AngajatInterface,
     public void saNuAibaRestante() {
 
     }
+
+//    Facem o clasa generala: Restaurant - declaram niste proprietati generale
+//    Incepem sa facem variantele specifice: doua clase (una restaurant vegan, una non vegan), ambele mostenesc clasa restaurant
+//    Facem o interfata - RestaurantVeganInterface - defineste regulile pentru un restaurant vegan (doua metode abstracte 1 -ServesteMancareVegana 2- MeniuVegan)
+//    La fel si pentru RestarantulNonVegan ( doua metode abstracte 1 -ServesteMancareNonVegana 2 - MeniuNonVegan)
+//    Deschidem un nou restaurant mixt ( O alta clasa RestaurantMixt ) care mosteneste clasa Restaurant si care implementeaza ambele interfete
+//
 }

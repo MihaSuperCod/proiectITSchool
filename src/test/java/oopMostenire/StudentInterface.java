@@ -2,8 +2,7 @@ package oopMostenire;
 
 public interface StudentInterface {
 
-    void mergeLaCursuri();
+    void mergiLaCursuri();
     void trebuieSaStudieze();
     void saNuAibaRestante();
-
 }

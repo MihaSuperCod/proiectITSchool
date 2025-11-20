@@ -1,6 +1,6 @@
 package oopMostenire;
 
-public class Sportiv extends Persoana {
+public class Sportiv extends Persoana implements SportivInterface {
 
     private String sport;
     private boolean sportEchipa;
@@ -13,47 +13,47 @@ public class Sportiv extends Persoana {
         this.experienta = experienta;
     }
 
-   public void infoSportiv(){
+    public void infoSportiv() {
         infoPersoana();
-       System.out.println("Sportul este " + sport);
-       System.out.println("Sportivul face parte dintr-o echipa? " + sportEchipa);
-       System.out.println("Experienta sportivului este de " + experienta);
-   }
-   public void mananca(){
-       System.out.println("Sportivul mananca intre antrenamente");
-   }
+        System.out.println("Sportul practicat este " + sport);
+        System.out.println("Este sport de echipa? " + sportEchipa);
+        System.out.println("Cati ani de experinta are sporivul? " + experienta);
+    }
 
-   public void cautaSportiv(){
-       System.out.println("Afisez toti sportivii inregistrati");
-   }
+    public void mananca(){
+        System.out.println("Sportivul mananca intre antrenamente");
+    }
 
-   public void cautaSportiv(String sport){
-       System.out.println("Afisez sportivii care joaca sportul " + sport);
-   }
+    public void cautaSportiv(){
+        System.out.println("Afisez toti sportivii ");
+    }
 
-   public void cautaSportiv(String sport, int experienta){
-       System.out.println("Afisez sportivii cu " + experienta + "ani" + " care practica sportul" + sport);
-   }
+    public void cautaSportiv(String sport){
+        System.out.println("Afisez sportivii care practica sportul " + sport);
+    }
 
+    public void cautaSportiv(String sport, int experienta){
+        System.out.println("Afisez sportivii cu " + experienta + " ani" + " care practica " + sport);
+    }
 
     public String getSport() {
         return sport;
-    }
-
-    public boolean isSportEchipa() {
-        return sportEchipa;
-    }
-
-    public int getExperienta() {
-        return experienta;
     }
 
     public void setSport(String sport) {
         this.sport = sport;
     }
 
+    public boolean isSportEchipa() {
+        return sportEchipa;
+    }
+
     public void setSportEchipa(boolean sportEchipa) {
         this.sportEchipa = sportEchipa;
+    }
+
+    public int getExperienta() {
+        return experienta;
     }
 
     public void setExperienta(int experienta) {
@@ -61,17 +61,17 @@ public class Sportiv extends Persoana {
     }
 
     @Override
-    public void mergeLaAntrenamente(){
+    public void mergeLaAntrenamente() {
         System.out.println("Sportivul trebuie sa mearga la antrenamente");
     }
 
     @Override
-    public void participaLaCompetitii(){
-        System.out.println("Sportivul participa la competitii");
+    public void mergeLaCompetitii() {
+        System.out.println("Sportivul trebuie sa mearga la competitii");
     }
 
     @Override
-    public void respectaRegim(){
-        System.out.println("Sportivul trebuie sa respecte regimul");
+    public void respectaRegim() {
+        System.out.println("Sportivul trebuie sa tina regim");
     }
 }
