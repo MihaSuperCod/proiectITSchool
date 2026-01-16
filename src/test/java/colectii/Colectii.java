@@ -75,7 +75,7 @@ public class Colectii {
 
     public void tariOrase () {
         Map<String,List<String>>  obiecte = new HashMap<>();
-        List<String> oraseRomania= Arrays.asList("Cluj", "Bucuresti", "Timisoara");
+        List<String> oraseRomania= Arrays.asList("Cluj","Timisoara", "Bucuresti");
         List<String> oraseItalia= Arrays.asList("Torino", "Verona", "Roma");
         List<String> oraseSpania= Arrays.asList("Madrid", "Barcelona", "Valencia");
 
